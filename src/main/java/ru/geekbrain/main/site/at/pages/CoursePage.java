@@ -47,15 +47,15 @@ public class CoursePage extends ContentBasePage {
     public CoursePage checkingDisplayedCourses(ContentCourseBlock.Tab tab, String... args) {
         List<WebElement> list = null;
         switch (tab) {
-            case Courses: {
+            case COURSES: {
                 list = courseList;
                 break;
             }
-            case Professions:{
+            case PROFESSIONS:{
                 list = professionList;
                 break;
             }
-            case FreeIntensive:{
+            case FREEINTENSIVE:{
                 list = freeList;
                 break;
             }

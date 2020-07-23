@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 //верхнеуровневые проверки футера
 
 public class FooterElements extends BasePageObject {
+    private ContentBasePage contentBasePage;
 
     @FindBy(css =  "[class='site-footer']")
     private WebElement baseFooterElement;
@@ -29,7 +30,6 @@ public class FooterElements extends BasePageObject {
         PageFactory.initElements(driver,this);
     }
 
-    ContentBasePage contentBasePage;
     @Step("Проверка элементов футера")
     public ContentBasePage testFooter(){
            wait10second.until(ExpectedConditions.visibilityOfAllElements(

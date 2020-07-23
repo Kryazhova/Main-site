@@ -21,19 +21,19 @@ public class CourseTest extends BeforeAndAfterStep {
                         .openUrl()
                         .closedPopUp()
         )
-                .getContentNavigationCourseBlock().clickTab(Courses)
+                .getContentNavigationCourseBlock().clickTab(COURSES)
                 .configFilter("Бесплатные", "Веб-разработка")
-                .checkingDisplayedCourses(Courses,
+                .checkingDisplayedCourses(COURSES,
                         "Основы ООП", "JavaScript. Уровень 1")
 
-                .getContentNavigationCourseBlock().clickTab(Professions)
-                .checkingDisplayedCourses(Professions,
+                .getContentNavigationCourseBlock().clickTab(PROFESSIONS)
+                .checkingDisplayedCourses(PROFESSIONS,
                         "Искусственного интеллекта","Java-разработки")
 
-                .getContentNavigationCourseBlock().clickTab(FreeIntensive)
-                .checkingDisplayedCourses(FreeIntensive,"Интенсив “Веб-разработка для начинающих”")
+                .getContentNavigationCourseBlock().clickTab(FREEINTENSIVE)
+                .checkingDisplayedCourses(FREEINTENSIVE,"Интенсив “Веб-разработка для начинающих”")
 
-                .getContentNavigationCourseBlock().clickTab(Professions);
+                .getContentNavigationCourseBlock().clickTab(PROFESSIONS);
 
     }
 }

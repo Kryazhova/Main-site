@@ -50,14 +50,14 @@ public class SearchTest extends BeforeAndAfterStep {
                 .searchText("java")
 
                 .getSearchElement()
-                .checkCount(SearchElement.SearchTab.Professions, greaterThanOrEqualTo(2))
-                .checkCount(SearchElement.SearchTab.Courses, greaterThan(15))
-                .checkCount(SearchElement.SearchTab.Enents, allOf(
+                .checkCount(SearchElement.SearchTab.PROFESSIONS, greaterThanOrEqualTo(2))
+                .checkCount(SearchElement.SearchTab.COURSES, greaterThan(15))
+                .checkCount(SearchElement.SearchTab.EVENTS, allOf(
                         greaterThan(180),
                         lessThan(300)))
-                .checkCount(SearchElement.SearchTab.Blogs, greaterThan(300))
-                .checkCount(SearchElement.SearchTab.Forums, not(350))
-                .checkCount(SearchElement.SearchTab.Tests, not(0));
+                .checkCount(SearchElement.SearchTab.BLOGS, greaterThan(300))
+                .checkCount(SearchElement.SearchTab.FORUMS, not(350))
+                .checkCount(SearchElement.SearchTab.TESTS, not(0));
 
     }
 }

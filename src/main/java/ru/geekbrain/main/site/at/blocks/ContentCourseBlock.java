@@ -30,19 +30,19 @@ public class ContentCourseBlock extends BasePageObject {
     @Step("Нажатие на таб {tab}")
     public CoursePage clickTab(Tab tab) {
         switch (tab) {
-            case Professions: {
+            case PROFESSIONS: {
                 tabProfessions.click();
                 return new CoursePage(driver);
             }
-            case FreeIntensive: {
+            case FREEINTENSIVE: {
                 tabFreeIntensive.click();
                 return new CoursePage(driver);
             }
-            case Courses: {
+            case COURSES: {
                 tabCourses.click();
                 return new CoursePage(driver);
             }
-            case Companies: {
+            case COMPANIES: {
                 tabCompanies.click();
                 return new CoursePage(driver);
             }
@@ -51,9 +51,9 @@ public class ContentCourseBlock extends BasePageObject {
     }
 
     public enum Tab {
-        Professions,
-        FreeIntensive,
-        Courses,
-        Companies;
+        PROFESSIONS,
+        FREEINTENSIVE,
+        COURSES,
+        COMPANIES;
     }
 }

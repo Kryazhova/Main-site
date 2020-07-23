@@ -52,28 +52,28 @@ public class SearchElement  extends BasePageObject {
     @Step("Проверка блока {searchTab}")
     private WebElement testSearchElement (SearchTab searchTab) {
             switch (searchTab) {
-                case Everywhere: {
+                case EVERYWHERE: {
                     return everyWhere;
                 }
-                case Professions: {
+                case PROFESSIONS: {
                     return profession;
                 }
-                case Courses: {
+                case COURSES: {
                    return course;
                 }
-                case Enents:{
+                case EVENTS:{
                     return event;
                 }
-                case Blogs: {
+                case BLOGS: {
                     return blog;
                 }
-                case Forums: {
+                case FORUMS: {
                    return forums;
                 }
-                case Tests: {
+                case TESTS: {
                     return test;
                 }
-                case Companies: {
+                case COMPANIES: {
                     return projectAndCompanies;
                 }
                 default: {
@@ -83,14 +83,14 @@ public class SearchElement  extends BasePageObject {
     }
 
     public enum SearchTab {
-        Everywhere("Везде"),
-        Professions("Профессии"),
-        Courses("Курсы"),
-        Enents("Вебинары"),
-        Blogs("Блоги"),
-        Forums("Форумы"),
-        Tests("Тесты"),
-        Companies("Компании");
+        EVERYWHERE("Везде"),
+        PROFESSIONS("Профессии"),
+        COURSES("Курсы"),
+        EVENTS("Вебинары"),
+        BLOGS("Блоги"),
+        FORUMS("Форумы"),
+        TESTS("Тесты"),
+        COMPANIES("Компании");
 
         private String text;
 
