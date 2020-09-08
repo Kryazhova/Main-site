@@ -2,21 +2,7 @@
 
 Тесты написаны для https://geekbrains.ru/
 
-## Чтобы запустить тесты и просмотреть отчет соберите проект командой:
-
-```mvn
-mvn clean test allure:serve
-```
-
-## Используемые библиотеки
-
-  - selenium-java
-  - junit-jupiter
-  - webdrivermanager
-  - hamcrest
-  - allure-junit5
-  
-### Описание тестов
+## Описание проекта
 Данный проект включает в себя 4 теста: SearchTest, LeftNavigationTest, CourseTest и AuthorizationTest.
 
 - SearchTest 
@@ -35,6 +21,21 @@ mvn clean test allure:serve
 - AuthorizationTest проверяет авторизацию пользователя с валидными логином и паролем. 
 Включает в себя проверку редиректа после авторизации пользователя, а также проверку футера и хэдера для 
 авторизованного пользователя
+
+## Чтобы запустить тесты и просмотреть отчет соберите проект командой:
+
+```mvn
+mvn clean test allure:serve
+```
+
+## Используемые библиотеки
+
+  - selenium-java
+  - junit-jupiter
+  - webdrivermanager
+  - hamcrest
+  - allure-junit5
+  
 
 ## Автор проекта
 Кряжова Светлана Юрьевна
